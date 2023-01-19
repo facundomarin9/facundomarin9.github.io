@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+        <script src="main.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <img class="logo" src="images/Logo@2x.png" alt="">
+                
+        </header>
+
+            <main>
+
+                <section class="botones-en-des">
+                    <textarea id="textoEncriptar" class="text-area" id="" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                        <div class="cajawarning">
+                            <div class="warning">
+                                <img class="image-warning" src="images/warning.png" alt=""><h6 class="informacion">Solo letras minusculas y sin acento</h6>
+                            </div>
+                                <div class="botones">
+                                    <button class="btn-encriptar" onClick="onclickEncriptar()">Encriptar</button>
+                                    <button class="btn-desencriptar" onClick="onclickDesencriptar()">Desencriptar</button>
+                                </div>
+                        </div>
+                </section>
+                <section class="caja-mensaje">
+                    <div class="busqueda">
+                        
+                        <textarea id="resultado" class="mensaje" cols="20" rows="20" disabled></textarea>
+                            <div class="mensajesBusq">
+
+                                <p class="encontrar">Ningún mensaje fue encontrado</p>
+                                <p class="encontrar2">Ingrese el texto que desees encriptar o desencriptar.</p>
+                            </div>
+                    </div>
+                    <div>
+                        <button class="btn-copiar" onClick="onclickCopiar()">Copiar</button>
+                    </div>
+                </section>
+
+            </main>
+        
+        
+    </body>
+
+    <footer>
+
+        <img class="logofooter" src="images/logo2.png" alt=""><h1 class="copyright">&copy; Copyright Facundo Marin - 2023</h1>
+        
+    </footer>
+
+</html>
